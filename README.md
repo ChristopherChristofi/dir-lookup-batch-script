@@ -2,7 +2,7 @@
 
 ## Description:
 
-A batch script for data quality management. A batch script for validating the existence of a given filename/code that points to a file present in a particular directory; two resulting text documents are created, consisting of either a list of files found by the provided filecodes (lookupresults.txt) and therefore exist in the directory, or -- from the set of provided filecodes/names -- a list of files that were not found and therefore not present in the directory.
+A batch script for data quality management. A batch script for validating the existence of a given filename/code that points to a file present in a particular directory; two resulting text documents are created, consisting of either a list of files found by the provided filecodes (saved in lookupresults.txt) and therefore exist in the directory, or -- from the set of provided filecodes/names -- a list of files that were not found (saved in lookuperrors.txt) and therefore not present in the directory.
 
 ## Status:
 
@@ -37,23 +37,23 @@ The python script will generate a pre-determined sample of randomly generated --
 
 ## Example Topology:
 
-.
-├── data/
-|    ├─ file1.txt
-|    ├─ file2.mp3
-|    ├─ file3.txt
-|    ├─ more_data/
-|       ├─ file4.txt
-|       ├─ file5.jpg
-|
-├── lookup.bat
-|    ├─ the executable script
-|
-├── find_codes.txt
-|    ├─ provide the desired files to locate
-|         e.g: file1, file4, file5 (all on newline no ",")
-|
-├── lookupresults.txt
-|       after search this will contain file1 and file4
-├── lookuperrors.txt
-        after search this will contain file9
+    .
+    ├── data/
+    |    ├─ file1.txt
+    |    ├─ file2.mp3
+    |    ├─ file3.txt
+    |    ├─ more_data/
+    |       ├─ file4.txt
+    |       ├─ file5.jpg
+    |
+    ├── lookup.bat
+    |    ├─ the executable script
+    |
+    ├── find_codes.txt
+    |    ├─ provide the desired files to locate
+    |         e.g: file1, file4, file5 (all on newline no ",")
+    |
+    ├── lookupresults.txt
+    |       after search this will contain file1 and file4
+    ├── lookuperrors.txt
+            after search this will contain file9
