@@ -55,7 +55,7 @@ The python script will generate a pre-determined sample of randomly generated --
     |
     ├── find_codes.txt
     |    ├─ provide the desired files to locate
-    |         e.g: file1, file4, file5 (all on newline no ",")
+    |         e.g: file1, file4, file9 (all on newline; no ",")
     |
     ├── lookupresults.txt
     |       after search this will contain file1 and file4
